@@ -1,0 +1,2 @@
+Passing Percentage: 60.0
+Failing Percentage: 40.0
