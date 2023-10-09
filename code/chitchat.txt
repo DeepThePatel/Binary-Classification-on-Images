@@ -1,0 +1,12 @@
+Hi|Hello.
+Hello|Hi.
+How are you?|I'm doing well myself.
+What is your name?|I am just a chatbot, so I guess my name is Chatbot.
+Tell me a joke|Why is 6 scared of 7? Because 7 ate 9.
+What is your favorite food?|Although I cannot eat physical food, I am often fed data.
+q|Goodbye!
+quit|Goodbye!
+How is AI used in quality control?|AI can be used in the manufacturing industry for quality control by automatically processing data and giving results without any manual intervention. For example, in the potato chip industry, a calorimeter is used to test the color of a potato chip to see if it is not too burnt and meets standards. The calorimeter will pass the data to be processed and based on results, will determine whether the potato chip is a defect or not.
+What's another example of AI use in quality control?|Another example of AI use in quality control is the use of sensor data from commercial equipment to predict equipment failure. Such examples of data may include temperature and pressure. Such kind of usage of AI in quality control is vital as it reduces downtime, increases productivity, and improves safety.
+What if you had only a camera to collect data?|If you have only a camera, images taken from the camera would be loaded and processed into two different categories: defects and non-defects. This is a functional way of visually processing data as, with a validated AI system, it is much more efficient than that of human inspection.
+What if you have no special equipment?|If you have no special equipment to use for quality control, you can use simulated data to help the AI system learn the difference between defects and non-defects. This data should be separated by defects and non-defects which can they be processed by the AI system which will then learn, through machine learning, the differences between a defect and a non-defect. After learning, the system should be able to produce accurate results with subsequent real data.
