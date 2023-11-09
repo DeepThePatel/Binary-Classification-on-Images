@@ -1,1 +1,1 @@
-Docs folder placeholder
+Dataset:  https://www.kaggle.com/datasets/concaption/pepsico-lab-potato-quality-control/
