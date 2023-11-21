@@ -7,3 +7,5 @@ Convolutional Neural Network: https://www.tensorflow.org/tutorials/images/cnn
 Sequential Model: https://keras.io/guides/sequential_model/
 
 Binary Classification and Neural Networks: https://www.kaggle.com/code/karthik7395/binary-classification-using-neural-networks
+
+Classification using CNNs and PyTorch: https://pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html
