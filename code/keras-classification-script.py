@@ -3,10 +3,6 @@
 # subprocess.run(['pip', 'install', 'tensorflow'])
 # subprocess.run(['pip', 'install', 'matplotlib'])
 
-# Warnings filter
-import warnings
-warnings.filterwarnings("ignore")
-
 # Imports
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.models import Sequential
@@ -55,9 +51,10 @@ model.add(Dense(128, activation='relu'))
 model.add(Dense(1, activation='sigmoid')) # CNN Output layer
 model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
 
-# Model checkpoint
+# Model checkpoint filepath
 checkpoint_filepath = r'C:/Users/deepk/OneDrive/Documents/College/6th Year/CSCE 580/CSCE580-Fall2023-DeepPatel-Repo/code/model_checkpoint.h5'
 
+# Model checkpoint
 model_checkpoint = ModelCheckpoint(
     checkpoint_filepath,
     monitor='val_accuracy',  # You can change this to 'val_loss' or another metric

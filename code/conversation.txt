@@ -1,8 +1,9 @@
 You: hi
 Chatbot: Hello.
-You: how are you?
-Chatbot: I'm doing well myself.
-You: how is ai used in quality control?
-Chatbot: AI can be used in the manufacturing industry for quality control by automatically processing data and giving results without any manual intervention. For example, in the potato chip industry, a calorimeter is used to test the color of a potato chip to see if it is not too burnt and meets standards. The calorimeter will pass the data to be processed and based on results, will determine whether the potato chip is a defect or not.
+You: execute
+You: hi
+Chatbot: Hello.
+You: hi
+Chatbot: Hello.
 You: q
 Chatbot: Goodbye!
