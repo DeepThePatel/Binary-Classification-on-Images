@@ -8,8 +8,8 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense
 from tensorflow.keras.callbacks import ModelCheckpoint
-import matplotlib.pyplot as plt
 from tensorflow.keras.preprocessing.image import load_img, img_to_array
+import matplotlib.pyplot as plt
 import numpy as np
 import sys
 import io
@@ -17,7 +17,6 @@ import io
 # Data Paths
 train_data_dir = r'C:/Users/deepk/OneDrive/Documents/College/6th Year/CSCE 580/CSCE580-Fall2023-DeepPatel-Repo/data/pepsico_dataset/Train'
 test_data_dir = r'C:/Users/deepk/OneDrive/Documents/College/6th Year/CSCE 580/CSCE580-Fall2023-DeepPatel-Repo/data/pepsico_dataset/Test'
-
 
 # Set batch size and image size
 batch_size = 32
@@ -27,10 +26,8 @@ image_size = (250, 250)
 train_datagen = ImageDataGenerator(rescale=1.0/255.0)
 test_datagen = ImageDataGenerator(rescale=1.0/255.0)
 
-# Save the original stdout
+# Muting output console for irrelevant program output
 original_stdout = sys.stdout
-
-# Redirect stdout to a dummy stream to suppress output
 sys.stdout = io.StringIO()
 
 # Creating train/test generators for binary classification
@@ -48,7 +45,7 @@ test_generator = test_datagen.flow_from_directory(
     class_mode='binary',
 )
 
-# Restore the original stdout
+# Restoring output console
 sys.stdout = original_stdout
 
 
