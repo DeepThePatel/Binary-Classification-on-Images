@@ -9,6 +9,10 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense
 from tensorflow.keras.callbacks import ModelCheckpoint
 import matplotlib.pyplot as plt
+from tensorflow.keras.preprocessing.image import load_img, img_to_array
+import numpy as np
+import sys
+import io
 
 # Data Paths
 train_data_dir = r'C:/Users/deepk/OneDrive/Documents/College/6th Year/CSCE 580/CSCE580-Fall2023-DeepPatel-Repo/data/pepsico_dataset/Train'
@@ -22,6 +26,12 @@ image_size = (250, 250)
 # Preprocessing images by rescaling
 train_datagen = ImageDataGenerator(rescale=1.0/255.0)
 test_datagen = ImageDataGenerator(rescale=1.0/255.0)
+
+# Save the original stdout
+original_stdout = sys.stdout
+
+# Redirect stdout to a dummy stream to suppress output
+sys.stdout = io.StringIO()
 
 # Creating train/test generators for binary classification
 train_generator = train_datagen.flow_from_directory(
@@ -37,6 +47,10 @@ test_generator = test_datagen.flow_from_directory(
     batch_size=batch_size,
     class_mode='binary',
 )
+
+# Restore the original stdout
+sys.stdout = original_stdout
+
 
 # Neural network architecture for the sequential model
 model = Sequential() # Create sequential model
@@ -57,9 +71,9 @@ checkpoint_filepath = r'C:/Users/deepk/OneDrive/Documents/College/6th Year/CSCE 
 # Model checkpoint
 model_checkpoint = ModelCheckpoint(
     checkpoint_filepath,
-    monitor='val_accuracy',  # You can change this to 'val_loss' or another metric
+    monitor='val_accuracy',  
     save_best_only=True,
-    mode='max',  # Use 'min' for loss, 'max' for accuracy
+    mode='max', 
     verbose=1
 )
 
@@ -69,4 +83,29 @@ model.load_weights(checkpoint_filepath)
 # Results
 test_loss, test_accuracy = model.evaluate(test_generator, steps=len(test_generator))
 print(f"Test Accuracy: {test_accuracy}")
+print(f"Test Loss: {test_loss}")
+
+# Function to classify an image
+def classify_image(image_path):
+    img = load_img(image_path, target_size=(250, 250))
+    img_array = img_to_array(img)
+    img_array = img_array / 255.0
+    img_array = np.expand_dims(img_array, axis=0)
+
+    prediction = model.predict(img_array)[0][0]
+    return "Pass" if prediction > 0.5 else "Fail"
+
+if __name__ == "__main__":
+    # Get the image path from command line arguments
+    if len(sys.argv) != 2:
+        print("Usage: python keras-classification-script.py <image_path>")
+        sys.exit(1)
+
+    image_path = sys.argv[1]
+
+    # Perform image classification
+    result = classify_image(image_path)
+
+    # Print the result
+    print(result)
 
