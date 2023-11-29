@@ -1,15 +1,17 @@
+You: hi
+Chatbot: Hello.
+You: hi
+Chatbot: Hello.
 You: execute
-Chatbot: Program Output: 
-1/6 [====>.........................] - ETA: 14s - loss: 0.0120 - accuracy: 1.0000
-2/6 [=========>....................] - ETA: 8s - loss: 0.0357 - accuracy: 0.9844 
-3/6 [==============>...............] - ETA: 6s - loss: 0.0317 - accuracy: 0.9896
-4/6 [===================>..........] - ETA: 4s - loss: 0.0263 - accuracy: 0.9922
-5/6 [========================>.....] - ETA: 2s - loss: 0.0281 - accuracy: 0.9937
-6/6 [==============================] - ETA: 0s - loss: 0.0246 - accuracy: 0.9948
-6/6 [==============================] - 14s 2s/step - loss: 0.0246 - accuracy: 0.9948
-Test Accuracy: 0.9947916865348816
-Test Loss: 0.024646857753396034
-You: hello
-Chatbot: Hi.
+Chatbot: Program Output: You: hi
+Chatbot: Hello.
+You: execute
+Chatbot: Program Output: You: hi
+Chatbot: Hello.
+You: execute2
+Chatbot: Program Output: Accuracy: 0.984375
+You: execute
+Chatbot: Program Output: You: hi
+Chatbot: Hello.
 You: q
 Chatbot: Goodbye!

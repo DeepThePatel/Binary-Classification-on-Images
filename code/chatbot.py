@@ -35,6 +35,14 @@ while True:
             print(result.stdout)
         except FileNotFoundError:
             print("Chatbot: Error executing program. File not found.")
+    elif user_input == "execute2":
+        conversation_file.write(f"You: {user_input}\n")
+        try:
+            result = subprocess.run(['python', 'pytorch-classification-script.py'], capture_output=True, text=True)
+            print("Program Output:")
+            print(result.stdout)
+        except FileNotFoundError:
+            print("Chatbot: Error executing program. File not found.")
     elif user_input in specific_responses:
         print(f"Chatbot: {specific_responses[user_input]}")
         # Write conversation to conversation.txt
