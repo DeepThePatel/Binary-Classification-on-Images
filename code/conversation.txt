@@ -1,0 +1,6 @@
+You: hi
+Chatbot: Hello.
+You: hello
+Chatbot: Hi.
+You: q
+Chatbot: Goodbye!

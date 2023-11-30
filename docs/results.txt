@@ -43,3 +43,13 @@ Post-Optimization
 --------------------------------------------------
    Average   |    98.18%       |      12m 2.5s 
 --------------------------------------------------
+
+Comparison to Google Bard
+(First 10 images from Test/Defective and Test/Not Defective were used in all tests)
+
+Google Bard Accuracy
+     Defective - 70% accuracy
+     Non-Defective - 10% accuracy
+
+Keras Accuracy - 100%
+PyTorch Accuracy - 100%
