@@ -1,7 +1,7 @@
 **Video Demo**
 https://youtu.be/l0urnBij-W0
 
-**Resources**
+**Resources:**
 
 Dataset:  https://www.kaggle.com/datasets/concaption/pepsico-lab-potato-quality-control/
 
