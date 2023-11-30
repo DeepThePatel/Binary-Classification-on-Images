@@ -1,6 +1,6 @@
-You: hi
-Chatbot: Hello.
-You: hello
-Chatbot: Hi.
+You: can you perform binary classification for me?
+Chatbot: Yes, which library would you like to use? 'Keras' or 'Pytorch'?
+You: pytorch
+Chatbot: Accuracy: 0.9739583333333334
 You: q
 Chatbot: Goodbye!

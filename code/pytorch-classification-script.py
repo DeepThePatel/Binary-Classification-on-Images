@@ -71,6 +71,7 @@ num_epochs = checkpoint['epoch']
 checkpoint_model.eval()
 total_val = 0
 correct_val = 0
+val_loss = 0
 
 # Loading model checkpoint (includes evaluation and printing)
 if torch.cuda.is_available():
@@ -94,10 +95,14 @@ with torch.no_grad():
     for inputs, labels in test_loader:
         inputs, labels = inputs.to(device), labels.to(device)
         outputs = checkpoint_model(inputs)
+        loss = criterion(outputs, labels.float().view(-1, 1))
+        val_loss += loss.item()
         predicted = torch.round(outputs)
         total_val += labels.size(0)
         correct_val += (predicted == labels.float().view(-1, 1)).sum().item()
 
 # Print accuracy
 accuracy = correct_val / total_val
+loss = val_loss / len(test_loader)
 print(f"Accuracy: {accuracy}")
+print(f"Loss: {loss}")

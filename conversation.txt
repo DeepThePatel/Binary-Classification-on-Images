@@ -1,7 +1,0 @@
-You: hiYou: hi
-Chatbot: Hello.
-You: helloYou: hello
-Chatbot: Hi.
-You: keras
-Chatbot: You: qYou: q
-Chatbot: Goodbye!

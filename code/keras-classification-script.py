@@ -15,8 +15,8 @@ import sys
 import io
 
 # Data Paths
-train_data_dir = r'C:/Users/deepk/OneDrive/Documents/College/6th Year/CSCE 580/CSCE580-Fall2023-DeepPatel-Repo/data/chatbot_testing_dataset/Train'
-test_data_dir = r'C:/Users/deepk/OneDrive/Documents/College/6th Year/CSCE 580/CSCE580-Fall2023-DeepPatel-Repo/data/chatbot_testing_dataset/Test'
+train_data_dir = r'C:/Users/deepk/OneDrive/Documents/College/6th Year/CSCE 580/CSCE580-Fall2023-DeepPatel-Repo/data/pepsico_dataset/Train'
+test_data_dir = r'C:/Users/deepk/OneDrive/Documents/College/6th Year/CSCE 580/CSCE580-Fall2023-DeepPatel-Repo/data/pepsico_dataset/Test'
 
 # Set batch size and image size
 batch_size = 32
@@ -80,6 +80,7 @@ model.load_weights(checkpoint_filepath)
 # Results
 test_loss, test_accuracy = model.evaluate(test_generator, steps=len(test_generator))
 print(f"Test Accuracy: {test_accuracy}")
+print(f"Test Loss: {test_loss}")
 
 # Function to classify an image
 def classify_image(image_path):
