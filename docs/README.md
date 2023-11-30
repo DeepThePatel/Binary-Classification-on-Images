@@ -1,4 +1,4 @@
-**Video Demo**
+**Video Demo: **
 https://youtu.be/l0urnBij-W0
 
 **Resources:**
