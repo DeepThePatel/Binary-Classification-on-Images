@@ -6,4 +6,5 @@
 6.  keras-classification-script.py - Keras model script for chatbot
 7.  keras-classification.ipynb - Keras classification model
 8.  pytorch_checkpoint.pt - Checkpoint for pytorch model
-9.  pytorch-classification.ipynb - PyTorch classification model
+9.  pytorch-classification-script.py - PyTorch model script for chatbot
+10. pytorch-classification.ipynb - PyTorch classification model

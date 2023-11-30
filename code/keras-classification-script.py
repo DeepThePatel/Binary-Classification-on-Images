@@ -80,7 +80,6 @@ model.load_weights(checkpoint_filepath)
 # Results
 test_loss, test_accuracy = model.evaluate(test_generator, steps=len(test_generator))
 print(f"Test Accuracy: {test_accuracy}")
-print(f"Test Loss: {test_loss}")
 
 # Function to classify an image
 def classify_image(image_path):
