@@ -1,3 +1,8 @@
+**Video Demo:**
+https://youtu.be/l0urnBij-W0
+
+**Resources:**
+
 Dataset:  https://www.kaggle.com/datasets/concaption/pepsico-lab-potato-quality-control/
 
 Convolution Layers: https://pyimagesearch.com/2018/12/31/keras-conv2d-and-convolutional-layers/
