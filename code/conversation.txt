@@ -1,0 +1,22 @@
+You: hi
+Chatbot: Hello.
+You: can you perform binary classification for me?
+Chatbot: Yes, which library would you like to use? 'Keras' or 'Pytorch'?
+You: keras
+Chatbot: 
+1/6 [====>.........................] - ETA: 27s - loss: 0.0309 - accuracy: 0.9688
+2/6 [=========>....................] - ETA: 9s - loss: 0.0295 - accuracy: 0.9844 
+3/6 [==============>...............] - ETA: 7s - loss: 0.0204 - accuracy: 0.9896
+4/6 [===================>..........] - ETA: 4s - loss: 0.0218 - accuracy: 0.9922
+5/6 [========================>.....] - ETA: 2s - loss: 0.0341 - accuracy: 0.9875
+6/6 [==============================] - ETA: 0s - loss: 0.0289 - accuracy: 0.9896
+6/6 [==============================] - 17s 2s/step - loss: 0.0289 - accuracy: 0.9896
+Test Accuracy: 0.9895833134651184
+Test Loss: 0.02892926335334778
+You: can you perform binary classification for me?
+Chatbot: Yes, which library would you like to use? 'Keras' or 'Pytorch'?
+You: pytorch
+Chatbot: Accuracy: 0.9739583333333334
+Loss: 0.25980056325594586
+You: q
+Chatbot: Goodbye!
