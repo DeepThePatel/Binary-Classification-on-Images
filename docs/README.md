@@ -1,3 +1,5 @@
+**Since I have made this repository public, the quiz responses I have submitted for this class have been removed for privacy reasons.**
+
 **Video Demo:**
 https://youtu.be/l0urnBij-W0
 
